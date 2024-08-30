@@ -1,0 +1,349 @@
+body::-webkit-scrollbar {
+    display: none; /*No mostrar la barra de desplazamiento*/
+}
+
+html {
+    background-color:rgb(193, 155, 116);
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#inicio{    
+    padding-top: 80px;
+    width: 100%;
+    background-color:rgb(193, 155, 116);
+}
+
+#nav{
+    position: absolute;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 99%;
+}
+
+#inicio #fanart >button,#inicio #compra >button{
+    border: none;
+    background-color:rgb(193, 155, 116);
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#buscador{
+    display: flex;
+    align-items: center;
+}
+
+input, select{
+    background-color:rgb(193, 155, 116);
+    border: none;
+    border-bottom: 2px solid black; /* Añade solo borde inferior */
+}
+
+.linea {
+    position: absolute;
+    height: 10px;
+    left: 5%;
+    background-color: rgb(78, 57, 36);
+}
+hr{
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    background-color: rgb(78, 57, 36);
+    border: 0;
+}
+hr:nth-of-type(1){
+    top: 320px;
+}
+hr:nth-of-type(2){
+    top: 590px;
+}
+hr:nth-of-type(3){
+    top: 850px;
+}
+hr:nth-of-type(4){
+    top: 1120px;
+}
+hr:nth-of-type(5){
+    top: 1380px;
+}
+hr:nth-of-type(6){
+    top: 1650px;
+}
+hr:nth-of-type(7){
+    top: 1910px;
+}
+hr:nth-of-type(8){
+    top: 2180px;
+}
+hr:nth-of-type(9){
+    top: 2440px;
+}
+hr:nth-of-type(10){
+    top: 2710px;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.imagen-libro {
+    width: 10%; /* Ajusta el ancho según tus necesidades */
+    height: 225px;  
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+
+/*////////////////////////////////////////////////////////////////////*/
+
+#librovista{
+    background-color:rgb(255, 255, 246);
+}
+
+#librovista > #volver{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#volver > button{
+    border: none;
+    background-color: rgb(255, 255, 246);
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+#librovista > #fanart >button{
+    border: none;
+    background-color:rgb(255, 255, 246);
+    cursor: pointer;
+    font-size: 1em;
+    position: absolute;
+    top: 30px;
+    left: 48%;
+}
+
+#libro > img{
+    width: 20%; /* Ajusta el ancho según tus necesidades */
+    margin: 100px 100px;
+    margin-bottom: 60px;
+}
+
+#infolibro{
+    position: absolute;
+    top: 300px;
+    left: 35%;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#libro > h1{
+    position: absolute;
+    top: 100px;
+    left: 35%;
+    right: 5%;
+    text-align: center;
+    font-size: 3.5em;
+    margin-bottom: 40px;
+    padding: 0;
+}
+#infolibro > h2{
+    font-size: 2.4em;
+    margin: 0;
+    padding: 0;
+}
+#infolibro > h3{
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-baskerville-bold {
+font-family: "Libre Baskerville", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+font-family: "Libre Baskerville", serif;
+font-weight: 400;
+font-style: italic;
+}
+
+.linea-vertical {
+    width: 2px; 
+    height: 200px;
+    background-color: black; 
+    position: absolute;
+    top:300px;
+    left:64%;
+    transform: translateX(-50%);
+}
+
+#datos{
+    position: absolute;
+    top: 365px;
+    left: 68%;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#datos > h3{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.star-rating {
+    position: absolute;
+    top: 520px;
+    left: 57.5%;   
+    font-size: 1.5em;
+
+}
+.star-rating::before {
+    content: '★★★★★';
+    font-size: 2em;
+    color: rgb(225, 225, 225);
+}
+.star-rating::after {
+    content: '★★★★★';
+    font-size: 2em;
+    color: rgb(255, 230, 88);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--rating);
+    overflow: hidden;
+}
+
+#lectura{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#protas{
+    margin-top: 0;
+    font-size: 2em;
+}
+
+#lectura > p{
+    line-height: 2;
+}
+
+#citas{
+    margin-top: 80px;
+}
+
+
+#contenedorsaga{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#contenedorsaga> h2{
+    font-size: 1.8em;
+}
+
+#imagenessaga{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.imagen-saga{
+    width: 15%;
+    margin: 20px 40px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+#fanarts{
+    position: absolute;
+    background-color:rgb(255, 255, 246);
+}
+
+#fanarts > #volver{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#fotosfanart {
+    display: flex;
+    margin-top: 7%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#fotosfanart img {
+    margin: 15px;
+    width: 13%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s, border-color 0.3s;
+    transform-origin: center center; /* Asegura que el centro de la imagen sea el punto de referencia */
+    cursor: pointer;
+}
+
+#fotosfanart img:hover {
+    border-color: #777;
+}
+
+#comprar{
+    padding: 5% 5%;
+    position: absolute;
+    background-color:rgb(255, 255, 246);
+
+}
+#comprar > #volver{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#comprar > #comprar2 img,#comprar > #comprado img{
+    width: 10%;
+    height: 225px;  
+    margin: 10px;
+}

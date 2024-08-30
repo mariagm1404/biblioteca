@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estantería</title>
+    <link rel="icon" type="image/png" href="libro.png">
+    <link rel="stylesheet" href="styleest.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        .vista{
+            display:none;
+        }
+        .vista.visible{
+            display:block;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="vista" id="inicio">
+        <div id="nav">
+            <div id="organizar">
+                <select id="ordenar" onchange="ordenarLibros()">
+                    <option value="autor">Autor</option>
+                    <option value="titulo">Título</option>
+                    <option value="fechaLectura">Fecha de Lectura</option>
+                    <option value="fechaPublicacion">Fecha de Publicación</option>
+                </select>
+            </div>
+
+            <div id="fanart">
+                <button onclick="irafanart()">Fanarts</button>
+            </div>
+
+            <div id="compra">
+                <button onclick="iracompra()">Compra</button>
+            </div>
+
+            <div id="buscador">
+                <span class="material-symbols-outlined">search</span> 
+                <input type="text" id="buscadorA" placeholder="Buscar por título o autor..." onkeyup="buscarLibros()">
+            </div>         
+        </div>
+        <hr class="linea"></hr>
+        <hr class="linea"></hr>
+        <hr class="linea"></hr>
+        <hr class="linea"></hr>
+        <hr class="linea"></hr>
+        <hr class="linea"></hr>
+        <hr class="linea"></hr>
+        <hr class="linea"></hr>
+        <hr class="linea"></hr>
+        <hr class="linea"></hr>
+
+        <div class="contenedor-imagenes" id="contenedor-imagenes"></div>
+    </div>
+    <div class="vista" id="librovista">
+        <div id="volver">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+            <button onclick="volver()">Volver a biblioteca</button>
+        </div>
+        <div id="fanart">
+            <button onclick="irafanart()">Fanarts</button>
+        </div>
+        <div id="libro"></div>
+    </div>
+    <div class="vista" id="fanarts">
+        <div id="volver">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+            <button onclick="volver()">Volver a biblioteca</button>
+        </div>
+        <div id="fotosfanart">
+
+        </div>
+        <br><br><br><br><br>
+    </div>
+    <div class="vista" id="comprar">
+        <div id="volver">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+            <button onclick="volver()">Volver a biblioteca</button>
+        </div>
+        <div id="comprar2"></div>
+        <div id="comprado"></div>
+        <br><br><br><br><br>
+    </div>
+    <script src="imagenes.js"></script>
+    <script src="datos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
